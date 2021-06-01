@@ -1,0 +1,224 @@
+Command: Read Memory address 22
+Read Cache Miss: Memory Address 22 read into cache set 4 in position 0 from memory with value 22
+
+Command: Read Memory address 2e
+Read Cache Miss: Memory Address 2e read into cache set 5 in position 0 from memory with value 2e
+
+Command: Read Memory address 2f
+Read Cache Hit: Memory Address 2f found in Cache Set 5 in position 0 with memory value 2f
+
+Command: Read Memory address 225
+Read Cache Miss: Memory Address 225 read into cache set 4 in position 1 from memory with value 25
+
+Command: Read Memory address 226
+Read Cache Hit: Memory Address 226 found in Cache Set 4 in position 1 with memory value 26
+
+Command: Read Memory address 227
+Read Cache Hit: Memory Address 227 found in Cache Set 4 in position 1 with memory value 27
+
+Command: Read Memory address 228
+Read Cache Miss: Memory Address 228 read into cache set 5 in position 1 from memory with value 28
+
+Command: Read Memory address 229
+Read Cache Hit: Memory Address 229 found in Cache Set 5 in position 1 with memory value 29
+
+Command: Read Memory address 22a
+Read Cache Hit: Memory Address 22a found in Cache Set 5 in position 1 with memory value 2a
+
+Command: Read Memory address 22b
+Read Cache Hit: Memory Address 22b found in Cache Set 5 in position 1 with memory value 2b
+
+Command: Read Memory address 22c
+Read Cache Hit: Memory Address 22c found in Cache Set 5 in position 1 with memory value 2c
+
+Command: Read Memory address 22d
+Read Cache Hit: Memory Address 22d found in Cache Set 5 in position 1 with memory value 2d
+
+Command: Read Memory address 22e
+Read Cache Hit: Memory Address 22e found in Cache Set 5 in position 1 with memory value 2e
+
+Command: Read Memory address 22f
+Read Cache Hit: Memory Address 22f found in Cache Set 5 in position 1 with memory value 2f
+
+Command: Read Memory address 230
+Read Cache Miss: Memory Address 230 read into cache set 6 in position 0 from memory with value 30
+
+Command: Read Memory address 3d2
+Read Cache Miss: Memory Address 3d2 read into cache set 2 in position 0 from memory with value d2
+
+Command: Read Memory address 3d3
+Read Cache Hit: Memory Address 3d3 found in Cache Set 2 in position 0 with memory value d3
+
+Command: Read Memory address 4
+Read Cache Miss: Memory Address 4 read into cache set 0 in position 0 from memory with value 4
+
+Command: Read Memory address 5
+Read Cache Hit: Memory Address 5 found in Cache Set 0 in position 0 with memory value 5
+
+Command: Read Memory address 6
+Read Cache Hit: Memory Address 6 found in Cache Set 0 in position 0 with memory value 6
+
+Command: Read Memory address 7
+Read Cache Hit: Memory Address 7 found in Cache Set 0 in position 0 with memory value 7
+
+Command: Read Memory address 8
+Read Cache Miss: Memory Address 8 read into cache set 1 in position 0 from memory with value 8
+
+Command: Display Cache
+Display Cache - here is the snapshot of what is in the cache
+Set  Usage  Dirty  Valid  Tag    Data 
+ 0     4      0      1      0    0  1  2  3  4  5  6  7 
+ 0     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 1     1      0      1      0    8  9  a  b  c  d  e  f 
+ 1     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 2     2      0      1      f   d0 d1 d2 d3 d4 d5 d6 d7 
+ 2     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 4     1      0      1      0   20 21 22 23 24 25 26 27 
+ 4     3      0      1      8   20 21 22 23 24 25 26 27 
+
+ 5     2      0      1      0   28 29 2a 2b 2c 2d 2e 2f 
+ 5     8      0      1      8   28 29 2a 2b 2c 2d 2e 2f 
+
+ 6     1      0      1      8   30 31 32 33 34 35 36 37 
+ 6     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+
+Command: Write Memory address 13 with value 83
+Write Cache Miss: Memory Address 13 read into cache set 2 in position 1 from memory and then updated with value 83
+
+Command: Read Memory address 1af
+Read Cache Miss: Memory Address 1af read into cache set 5 in position 0 from memory with value af
+
+Command: Write Memory address 232 with value 84
+Write Cache Hit: Memory Address 232 found in cache set 6 in position 0 and updated with value 84
+
+Command: Read Memory address 7b4
+Read Cache Miss: Memory Address 7b4 read into cache set 6 in position 1 from memory with value b4
+
+Command: Read Memory address 7b5
+Read Cache Hit: Memory Address 7b5 found in Cache Set 6 in position 1 with memory value b5
+
+Command: Read Memory address 7b6
+Read Cache Hit: Memory Address 7b6 found in Cache Set 6 in position 1 with memory value b6
+
+Command: Read Memory address 7b7
+Read Cache Hit: Memory Address 7b7 found in Cache Set 6 in position 1 with memory value b7
+
+Command: Display Cache
+Display Cache - here is the snapshot of what is in the cache
+Set  Usage  Dirty  Valid  Tag    Data 
+ 0     4      0      1      0    0  1  2  3  4  5  6  7 
+ 0     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 1     1      0      1      0    8  9  a  b  c  d  e  f 
+ 1     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 2     2      0      1      f   d0 d1 d2 d3 d4 d5 d6 d7 
+ 2     1      1      1      0   10 11 12 83 14 15 16 17 
+
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 4     1      0      1      0   20 21 22 23 24 25 26 27 
+ 4     3      0      1      8   20 21 22 23 24 25 26 27 
+
+ 5     3      0      1      6   a8 a9 aa ab ac ad ae af 
+ 5     8      0      1      8   28 29 2a 2b 2c 2d 2e 2f 
+
+ 6     2      1      1      8   30 31 84 33 34 35 36 37 
+ 6     4      0      1     1e   b0 b1 b2 b3 b4 b5 b6 b7 
+
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+
+Command: Read Memory address 109
+Read Cache Miss: Memory Address 109 read into cache set 1 in position 1 from memory with value 9
+
+Command: Read Memory address 10a
+Read Cache Hit: Memory Address 10a found in Cache Set 1 in position 1 with memory value a
+
+Command: Read Memory address 10b
+Read Cache Hit: Memory Address 10b found in Cache Set 1 in position 1 with memory value b
+
+Command: Write Memory address 189 with value 66
+Write Cache Miss: Memory Address 189 read into cache set 1 in position 0 from memory and then updated with value 66
+
+Command: Read Memory address 197
+Read Cache Miss: Memory Address 197 read into cache set 2 in position 1 from memory with value 97
+
+Command: Read Memory address b0
+Read Cache Miss: Memory Address b0 read into cache set 6 in position 0 from memory with value b0
+
+Command: Display Cache
+Display Cache - here is the snapshot of what is in the cache
+Set  Usage  Dirty  Valid  Tag    Data 
+ 0     4      0      1      0    0  1  2  3  4  5  6  7 
+ 0     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 1     2      1      1      6   88 66 8a 8b 8c 8d 8e 8f 
+ 1     3      0      1      4    8  9  a  b  c  d  e  f 
+
+ 2     2      0      1      f   d0 d1 d2 d3 d4 d5 d6 d7 
+ 2     2      0      1      6   90 91 92 93 94 95 96 97 
+
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 4     1      0      1      0   20 21 22 23 24 25 26 27 
+ 4     3      0      1      8   20 21 22 23 24 25 26 27 
+
+ 5     3      0      1      6   a8 a9 aa ab ac ad ae af 
+ 5     8      0      1      8   28 29 2a 2b 2c 2d 2e 2f 
+
+ 6     3      0      1      2   b0 b1 b2 b3 b4 b5 b6 b7 
+ 6     4      0      1     1e   b0 b1 b2 b3 b4 b5 b6 b7 
+
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+
+Command: Read Memory address 232
+Read Cache Miss: Memory Address 232 read into cache set 6 in position 0 from memory with value 84
+
+Command: Read Memory address 12
+Read Cache Miss: Memory Address 12 read into cache set 2 in position 0 from memory with value 12
+
+Command: Display Cache
+Display Cache - here is the snapshot of what is in the cache
+Set  Usage  Dirty  Valid  Tag    Data 
+ 0     4      0      1      0    0  1  2  3  4  5  6  7 
+ 0     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 1     2      1      1      6   88 66 8a 8b 8c 8d 8e 8f 
+ 1     3      0      1      4    8  9  a  b  c  d  e  f 
+
+ 2     3      0      1      0   10 11 12 83 14 15 16 17 
+ 2     2      0      1      6   90 91 92 93 94 95 96 97 
+
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+ 3     0      0      0      0    0  0  0  0  0  0  0  0 
+
+ 4     1      0      1      0   20 21 22 23 24 25 26 27 
+ 4     3      0      1      8   20 21 22 23 24 25 26 27 
+
+ 5     3      0      1      6   a8 a9 aa ab ac ad ae af 
+ 5     8      0      1      8   28 29 2a 2b 2c 2d 2e 2f 
+
+ 6     4      0      1      8   30 31 84 33 34 35 36 37 
+ 6     4      0      1     1e   b0 b1 b2 b3 b4 b5 b6 b7 
+
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+ 7     0      0      0      0    0  0  0  0  0  0  0  0 
+
+
+
+Verify main memory also
+*** Main Memory Address 13 has modified value 83
+*** Main Memory Address 232 has modified value 84

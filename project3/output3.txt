@@ -1,0 +1,1304 @@
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 1 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 103   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = a1020000
+
+IF/ID Read (read by the ID stage)
+Instruction = 00000000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+
+ID/EX Read (read by the EX stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 2 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 103   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00831820
+
+IF/ID Read (read by the ID stage)
+Instruction = a1020000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = a1020000, Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = X   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 1
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ReadReg1Value = 108, ReadReg2Value = 102, SEOffset = 0
+WriteRegNum = X, X
+
+ID/EX Read (read by the EX stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 3 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 103   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 810afffc
+
+IF/ID Read (read by the ID stage)
+Instruction = 00831820
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00831820, Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 104, ReadReg2Value = 103, SEOffset = X
+WriteRegNum = 3(rt), 3(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = a1020000, Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = X   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 1
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ReadReg1Value = 108, ReadReg2Value = 102, SEOffset = 0
+WriteRegNum = X, X
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 1
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ALUResult = 108   SWValue = 102   WriteRegNum = X
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 4 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 103   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00663820
+
+IF/ID Read (read by the ID stage)
+Instruction = 810afffc
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 810afffc, Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 108, ReadReg2Value = 10a, SEOffset = fffffffc
+WriteRegNum = 10(rt), 31(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 00831820, Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 104, ReadReg2Value = 103, SEOffset = X
+WriteRegNum = 3(rt), 3(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 207   SWValue = X   WriteRegNum = 3
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 1
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ALUResult = 108   SWValue = 102   WriteRegNum = X
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ALUResult = 108   LWDataValue = X   WriteRegNum = X
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 5 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 103   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00e24820
+
+IF/ID Read (read by the ID stage)
+Instruction = 00663820
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00663820, Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 103, ReadReg2Value = 106, SEOffset = X
+WriteRegNum = 6(rt), 7(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 810afffc, Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 108, ReadReg2Value = 10a, SEOffset = fffffffc
+WriteRegNum = 10(rt), 31(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 104   SWValue = X   WriteRegNum = 10
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 207   SWValue = X   WriteRegNum = 3
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 207   LWDataValue = X   WriteRegNum = 3
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [sb $2, 0($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = X
+
+ALUResult = 108   LWDataValue = X   WriteRegNum = X
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 6 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 = 10a   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 01279820
+
+IF/ID Read (read by the ID stage)
+Instruction = 00e24820
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00e24820, Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 107, ReadReg2Value = 102, SEOffset = X
+WriteRegNum = 2(rt), 9(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 00663820, Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 103, ReadReg2Value = 106, SEOffset = X
+WriteRegNum = 6(rt), 7(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 30d   SWValue = X   WriteRegNum = 7
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 104   SWValue = X   WriteRegNum = 10
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 104   LWDataValue = 4   WriteRegNum = 10
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [add $3, $4, $3]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 207   LWDataValue = X   WriteRegNum = 3
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 7 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 107   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 =   4   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 03297020
+
+IF/ID Read (read by the ID stage)
+Instruction = 01279820
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 01279820, Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 109, ReadReg2Value = 107, SEOffset = X
+WriteRegNum = 7(rt), 19(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 00e24820, Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 107, ReadReg2Value = 102, SEOffset = X
+WriteRegNum = 2(rt), 9(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 40f   SWValue = X   WriteRegNum = 9
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 30d   SWValue = X   WriteRegNum = 7
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 30d   LWDataValue = X   WriteRegNum = 7
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [lb $10, -4($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 104   LWDataValue = 4   WriteRegNum = 10
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 8 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 109   Register $10 =   4   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 01635822
+
+IF/ID Read (read by the ID stage)
+Instruction = 03297020
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 03297020, Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 119, ReadReg2Value = 109, SEOffset = X
+WriteRegNum = 9(rt), 14(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 01279820, Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 109, ReadReg2Value = 107, SEOffset = X
+WriteRegNum = 7(rt), 19(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 71c   SWValue = X   WriteRegNum = 19
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 40f   SWValue = X   WriteRegNum = 9
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 40f   LWDataValue = X   WriteRegNum = 9
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [add $7, $3, $6]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 30d   LWDataValue = X   WriteRegNum = 7
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 9 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 113   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 81180000
+
+IF/ID Read (read by the ID stage)
+Instruction = 01635822
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 01635822, Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 10b, ReadReg2Value = 207, SEOffset = X
+WriteRegNum = 3(rt), 11(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 03297020, Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 119, ReadReg2Value = 109, SEOffset = X
+WriteRegNum = 9(rt), 14(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 528   SWValue = X   WriteRegNum = 14
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 71c   SWValue = X   WriteRegNum = 19
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 71c   LWDataValue = X   WriteRegNum = 19
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [add $9, $7, $2]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 40f   LWDataValue = X   WriteRegNum = 9
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 10 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 10e   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 71c   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 81510010
+
+IF/ID Read (read by the ID stage)
+Instruction = 81180000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 81180000, Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 108, ReadReg2Value = 118, SEOffset = 0
+WriteRegNum = 24(rt), 0(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 01635822, Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 1   ALUOpt1 = 1   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ReadReg1Value = 10b, ReadReg2Value = 207, SEOffset = X
+WriteRegNum = 3(rt), 11(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = ffffff04   SWValue = X   WriteRegNum = 11
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 528   SWValue = X   WriteRegNum = 14
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 528   LWDataValue = X   WriteRegNum = 14
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [add $19, $9, $7]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 71c   LWDataValue = X   WriteRegNum = 19
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 11 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = 10b   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 528   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 71c   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00000000
+
+IF/ID Read (read by the ID stage)
+Instruction = 81510010
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 81510010, Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 4, ReadReg2Value = 111, SEOffset = 10
+WriteRegNum = 17(rt), 0(rd)
+
+ID/EX Read (read by the EX stage)
+Instruction = 81180000, Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 108, ReadReg2Value = 118, SEOffset = 0
+WriteRegNum = 24(rt), 0(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 108   SWValue = X   WriteRegNum = 24
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = ffffff04   SWValue = X   WriteRegNum = 11
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = ffffff04   LWDataValue = X   WriteRegNum = 11
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [add $14, $25, $9]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = 528   LWDataValue = X   WriteRegNum = 14
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 12 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = ffffff04   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 528   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 71c   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 = 118   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00000000
+
+IF/ID Read (read by the ID stage)
+Instruction = 00000000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+
+ID/EX Read (read by the EX stage)
+Instruction = 81510010, Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 1
+
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ReadReg1Value = 4, ReadReg2Value = 111, SEOffset = 10
+WriteRegNum = 17(rt), 0(rd)
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 14   SWValue = X   WriteRegNum = 17
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 108   SWValue = X   WriteRegNum = 24
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 108   LWDataValue = 2   WriteRegNum = 24
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [sub $11, $11, $3]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 0
+
+ALUResult = ffffff04   LWDataValue = X   WriteRegNum = 11
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 13 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = ffffff04   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 528   Register $15 = 10f   
+Register $16 = 110   Register $17 = 111   Register $18 = 112   Register $19 = 71c   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 =   2   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00000000
+
+IF/ID Read (read by the ID stage)
+Instruction = 00000000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+
+ID/EX Read (read by the EX stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 1   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 14   SWValue = X   WriteRegNum = 17
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 14   LWDataValue = 14   WriteRegNum = 17
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [lb $24, 0($8)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 108   LWDataValue = 2   WriteRegNum = 24
+
+
+
+--------------------------------------------------------------------
+  ------------------------ Clock Cycle 14 ------------------------  
+--------------------------------------------------------------------
+System Registers 0 to 31
+Register $ 0 =   0   Register $ 1 = 101   Register $ 2 = 102   Register $ 3 = 207   
+Register $ 4 = 104   Register $ 5 = 105   Register $ 6 = 106   Register $ 7 = 30d   
+Register $ 8 = 108   Register $ 9 = 40f   Register $10 =   4   Register $11 = ffffff04   
+Register $12 = 10c   Register $13 = 10d   Register $14 = 528   Register $15 = 10f   
+Register $16 = 110   Register $17 =  14   Register $18 = 112   Register $19 = 71c   
+Register $20 = 114   Register $21 = 115   Register $22 = 116   Register $23 = 117   
+Register $24 =   2   Register $25 = 119   Register $26 = 11a   Register $27 = 11b   
+Register $28 = 11c   Register $29 = 11d   Register $30 = 11e   Register $31 = 11f   
+
+IF/ID Write (written to by the IF stage)
+Instruction = 00000000
+
+IF/ID Read (read by the ID stage)
+Instruction = 00000000
+--------------------------------------------------
+
+ID/EX Write (written to by the ID stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+
+ID/EX Read (read by the EX stage)
+Instruction = 00000000, Instruction Name [NOP]
+Pipeline Controls:
+ Execution/address calculation stage
+  RegDst = 0   ALUOpt1 = 0   ALUOpt0 = 0   ALUSrc = 0
+
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ReadReg1Value = 0, ReadReg2Value = 0, SEOffset = X
+WriteRegNum = X, X
+--------------------------------------------------
+
+EX/MEM Write (written to by the EX stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+EX/MEM Read (Read by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Memory Access Stage
+  MemRead = 0   MemWrite = 0
+
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   SWValue = X   WriteRegNum = X
+
+--------------------------------------------------
+
+MEM/WB Write (written to by the MEM stage)
+Instruction Name [NOP]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 0   MemToReg = 0
+
+ALUResult = 0   LWDataValue = X   WriteRegNum = X
+
+MEM/WB Read (Read by the WB stage)
+Instruction Name [lb $17, 16($10)]
+Pipeline Controls:
+ Write-back Stage
+  RegWrite = 1   MemToReg = 1
+
+ALUResult = 14   LWDataValue = 14   WriteRegNum = 17
+
+
+
+Verify main memory also
+Memory addess 108 has modified value 2.

@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/MINGW/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/MINGW/operation=append
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/MINGW/value=MinGW_HOME
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PATH/value=${MINGW_HOME}\\bin;${MSYS_HOME}\\bin;${MSYS_HOME}\\usr\\bin;C\:/Program Files/Java/jre1.8.0_251/bin/server;C\:/Program Files/Java/jre1.8.0_251/bin;C\:/Program Files/Java/jre1.8.0_251/lib/amd64;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C\:\\WINDOWS\\System32\\OpenSSH\\;C\:\\Program Files\\Java\\jdk1.8.0_251\\bin;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files\\Intel\\WiFi\\bin\\;C\:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C\:\\Program Files\\Git\\cmd;C\:\\Program Files\\TortoiseGit\\bin;C\:\\Program Files\\nodejs\\;C\:\\Program Files\\Git\\bin;C\:\\MinGW\\bin;C\:\\mingw-w64\\GNU MCU Eclipse\\Build Tools\\2.12-20190422-1053\\bin;C\:\\mingw-w64\\bin;C\:\\Users\\david\\AppData\\Local\\Microsoft\\WindowsApps;C\:\\Users\\david\\AppData\\Roaming\\npm;C\:\\Users\\david\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;;C\:\\Users\\david\\eclipse\\cpp-2019-09\\eclipse
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PWD/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PWD/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/PWD/value=C\:\\Users\\david\\eclipse-workspace_cpp\\Project2\\Debug
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1008091167/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.924858142/MINGW/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.924858142/MINGW/operation=append
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.924858142/MINGW/value=MinGW_HOME
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.924858142/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.924858142/appendContributed=true
